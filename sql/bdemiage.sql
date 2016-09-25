@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 22 Septembre 2016 à 15:46
+-- Généré le :  Dim 25 Septembre 2016 à 09:53
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -37,6 +37,11 @@ CREATE TABLE `bak_cl9q0_assets` (
   `rules` varchar(5120) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'JSON encoded access control.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_assets`
+--
+
+TRUNCATE TABLE `bak_cl9q0_assets`;
 --
 -- Contenu de la table `bak_cl9q0_assets`
 --
@@ -115,6 +120,11 @@ CREATE TABLE `bak_cl9q0_associations` (
   `key` char(32) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'The key for the association computed from an md5 on associated ids.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_associations`
+--
+
+TRUNCATE TABLE `bak_cl9q0_associations`;
 -- --------------------------------------------------------
 
 --
@@ -158,6 +168,11 @@ CREATE TABLE `bak_cl9q0_banners` (
   `version` int(10) UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_banners`
+--
+
+TRUNCATE TABLE `bak_cl9q0_banners`;
 -- --------------------------------------------------------
 
 --
@@ -181,6 +196,11 @@ CREATE TABLE `bak_cl9q0_banner_clients` (
   `track_impressions` tinyint(4) NOT NULL DEFAULT '-1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_banner_clients`
+--
+
+TRUNCATE TABLE `bak_cl9q0_banner_clients`;
 -- --------------------------------------------------------
 
 --
@@ -194,6 +214,11 @@ CREATE TABLE `bak_cl9q0_banner_tracks` (
   `count` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_banner_tracks`
+--
+
+TRUNCATE TABLE `bak_cl9q0_banner_tracks`;
 -- --------------------------------------------------------
 
 --
@@ -230,6 +255,11 @@ CREATE TABLE `bak_cl9q0_categories` (
   `version` int(10) UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_categories`
+--
+
+TRUNCATE TABLE `bak_cl9q0_categories`;
 --
 -- Contenu de la table `bak_cl9q0_categories`
 --
@@ -294,6 +324,11 @@ CREATE TABLE `bak_cl9q0_contact_details` (
   `hits` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_contact_details`
+--
+
+TRUNCATE TABLE `bak_cl9q0_contact_details`;
 -- --------------------------------------------------------
 
 --
@@ -334,6 +369,11 @@ CREATE TABLE `bak_cl9q0_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_content`
+--
+
+TRUNCATE TABLE `bak_cl9q0_content`;
+--
 -- Contenu de la table `bak_cl9q0_content`
 --
 
@@ -356,6 +396,11 @@ CREATE TABLE `bak_cl9q0_contentitem_tag_map` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Maps items from content tables to tags';
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_contentitem_tag_map`
+--
+
+TRUNCATE TABLE `bak_cl9q0_contentitem_tag_map`;
+--
 -- Contenu de la table `bak_cl9q0_contentitem_tag_map`
 --
 
@@ -373,6 +418,11 @@ CREATE TABLE `bak_cl9q0_content_frontpage` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_content_frontpage`
+--
+
+TRUNCATE TABLE `bak_cl9q0_content_frontpage`;
 -- --------------------------------------------------------
 
 --
@@ -386,6 +436,11 @@ CREATE TABLE `bak_cl9q0_content_rating` (
   `lastip` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_content_rating`
+--
+
+TRUNCATE TABLE `bak_cl9q0_content_rating`;
 -- --------------------------------------------------------
 
 --
@@ -403,6 +458,11 @@ CREATE TABLE `bak_cl9q0_content_types` (
   `content_history_options` varchar(5120) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'JSON string for com_contenthistory options'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_content_types`
+--
+
+TRUNCATE TABLE `bak_cl9q0_content_types`;
 --
 -- Contenu de la table `bak_cl9q0_content_types`
 --
@@ -433,6 +493,11 @@ CREATE TABLE `bak_cl9q0_core_log_searches` (
   `hits` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_core_log_searches`
+--
+
+TRUNCATE TABLE `bak_cl9q0_core_log_searches`;
 -- --------------------------------------------------------
 
 --
@@ -459,6 +524,11 @@ CREATE TABLE `bak_cl9q0_extensions` (
   `state` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_extensions`
+--
+
+TRUNCATE TABLE `bak_cl9q0_extensions`;
 --
 -- Contenu de la table `bak_cl9q0_extensions`
 --
@@ -630,6 +700,11 @@ CREATE TABLE `bak_cl9q0_finder_filters` (
   `params` mediumtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_filters`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_filters`;
 -- --------------------------------------------------------
 
 --
@@ -658,6 +733,11 @@ CREATE TABLE `bak_cl9q0_finder_links` (
   `object` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links`;
 -- --------------------------------------------------------
 
 --
@@ -670,6 +750,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms0` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms0`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms0`;
 -- --------------------------------------------------------
 
 --
@@ -682,6 +767,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms1` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms1`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms1`;
 -- --------------------------------------------------------
 
 --
@@ -694,6 +784,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms2` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms2`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms2`;
 -- --------------------------------------------------------
 
 --
@@ -706,6 +801,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms3` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms3`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms3`;
 -- --------------------------------------------------------
 
 --
@@ -718,6 +818,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms4` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms4`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms4`;
 -- --------------------------------------------------------
 
 --
@@ -730,6 +835,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms5` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms5`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms5`;
 -- --------------------------------------------------------
 
 --
@@ -742,6 +852,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms6` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms6`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms6`;
 -- --------------------------------------------------------
 
 --
@@ -754,6 +869,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms7` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms7`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms7`;
 -- --------------------------------------------------------
 
 --
@@ -766,6 +886,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms8` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms8`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms8`;
 -- --------------------------------------------------------
 
 --
@@ -778,6 +903,11 @@ CREATE TABLE `bak_cl9q0_finder_links_terms9` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_terms9`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_terms9`;
 -- --------------------------------------------------------
 
 --
@@ -790,6 +920,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termsa` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termsa`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termsa`;
 -- --------------------------------------------------------
 
 --
@@ -802,6 +937,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termsb` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termsb`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termsb`;
 -- --------------------------------------------------------
 
 --
@@ -814,6 +954,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termsc` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termsc`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termsc`;
 -- --------------------------------------------------------
 
 --
@@ -826,6 +971,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termsd` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termsd`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termsd`;
 -- --------------------------------------------------------
 
 --
@@ -838,6 +988,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termse` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termse`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termse`;
 -- --------------------------------------------------------
 
 --
@@ -850,6 +1005,11 @@ CREATE TABLE `bak_cl9q0_finder_links_termsf` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_links_termsf`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_links_termsf`;
 -- --------------------------------------------------------
 
 --
@@ -865,6 +1025,11 @@ CREATE TABLE `bak_cl9q0_finder_taxonomy` (
   `ordering` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_taxonomy`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_taxonomy`;
 --
 -- Contenu de la table `bak_cl9q0_finder_taxonomy`
 --
@@ -883,6 +1048,11 @@ CREATE TABLE `bak_cl9q0_finder_taxonomy_map` (
   `node_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_taxonomy_map`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_taxonomy_map`;
 -- --------------------------------------------------------
 
 --
@@ -901,6 +1071,11 @@ CREATE TABLE `bak_cl9q0_finder_terms` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_terms`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_terms`;
 -- --------------------------------------------------------
 
 --
@@ -912,6 +1087,11 @@ CREATE TABLE `bak_cl9q0_finder_terms_common` (
   `language` varchar(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_terms_common`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_terms_common`;
 --
 -- Contenu de la table `bak_cl9q0_finder_terms_common`
 --
@@ -1149,6 +1329,11 @@ CREATE TABLE `bak_cl9q0_finder_tokens` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_tokens`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_tokens`;
 -- --------------------------------------------------------
 
 --
@@ -1169,6 +1354,11 @@ CREATE TABLE `bak_cl9q0_finder_tokens_aggregate` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_tokens_aggregate`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_tokens_aggregate`;
 -- --------------------------------------------------------
 
 --
@@ -1181,6 +1371,11 @@ CREATE TABLE `bak_cl9q0_finder_types` (
   `mime` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_finder_types`
+--
+
+TRUNCATE TABLE `bak_cl9q0_finder_types`;
 -- --------------------------------------------------------
 
 --
@@ -1204,6 +1399,11 @@ CREATE TABLE `bak_cl9q0_languages` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_languages`
+--
+
+TRUNCATE TABLE `bak_cl9q0_languages`;
 --
 -- Contenu de la table `bak_cl9q0_languages`
 --
@@ -1245,6 +1445,11 @@ CREATE TABLE `bak_cl9q0_menu` (
   `client_id` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_menu`
+--
+
+TRUNCATE TABLE `bak_cl9q0_menu`;
 --
 -- Contenu de la table `bak_cl9q0_menu`
 --
@@ -1292,6 +1497,11 @@ CREATE TABLE `bak_cl9q0_menu_types` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_menu_types`
+--
+
+TRUNCATE TABLE `bak_cl9q0_menu_types`;
+--
 -- Contenu de la table `bak_cl9q0_menu_types`
 --
 
@@ -1317,6 +1527,11 @@ CREATE TABLE `bak_cl9q0_messages` (
   `message` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_messages`
+--
+
+TRUNCATE TABLE `bak_cl9q0_messages`;
 -- --------------------------------------------------------
 
 --
@@ -1329,6 +1544,11 @@ CREATE TABLE `bak_cl9q0_messages_cfg` (
   `cfg_value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_messages_cfg`
+--
+
+TRUNCATE TABLE `bak_cl9q0_messages_cfg`;
 -- --------------------------------------------------------
 
 --
@@ -1356,6 +1576,11 @@ CREATE TABLE `bak_cl9q0_modules` (
   `language` char(7) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_modules`
+--
+
+TRUNCATE TABLE `bak_cl9q0_modules`;
 --
 -- Contenu de la table `bak_cl9q0_modules`
 --
@@ -1395,6 +1620,11 @@ CREATE TABLE `bak_cl9q0_modules_menu` (
   `menuid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_modules_menu`
+--
+
+TRUNCATE TABLE `bak_cl9q0_modules_menu`;
 --
 -- Contenu de la table `bak_cl9q0_modules_menu`
 --
@@ -1464,6 +1694,11 @@ CREATE TABLE `bak_cl9q0_newsfeeds` (
   `images` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_newsfeeds`
+--
+
+TRUNCATE TABLE `bak_cl9q0_newsfeeds`;
 -- --------------------------------------------------------
 
 --
@@ -1477,6 +1712,11 @@ CREATE TABLE `bak_cl9q0_overrider` (
   `file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_overrider`
+--
+
+TRUNCATE TABLE `bak_cl9q0_overrider`;
 -- --------------------------------------------------------
 
 --
@@ -1500,6 +1740,11 @@ CREATE TABLE `bak_cl9q0_postinstall_messages` (
   `enabled` tinyint(3) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_postinstall_messages`
+--
+
+TRUNCATE TABLE `bak_cl9q0_postinstall_messages`;
 --
 -- Contenu de la table `bak_cl9q0_postinstall_messages`
 --
@@ -1528,6 +1773,11 @@ CREATE TABLE `bak_cl9q0_redirect_links` (
   `header` smallint(3) NOT NULL DEFAULT '301'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_redirect_links`
+--
+
+TRUNCATE TABLE `bak_cl9q0_redirect_links`;
 -- --------------------------------------------------------
 
 --
@@ -1539,6 +1789,11 @@ CREATE TABLE `bak_cl9q0_schemas` (
   `version_id` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_schemas`
+--
+
+TRUNCATE TABLE `bak_cl9q0_schemas`;
 --
 -- Contenu de la table `bak_cl9q0_schemas`
 --
@@ -1562,6 +1817,11 @@ CREATE TABLE `bak_cl9q0_session` (
   `username` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_session`
+--
+
+TRUNCATE TABLE `bak_cl9q0_session`;
 -- --------------------------------------------------------
 
 --
@@ -1602,6 +1862,11 @@ CREATE TABLE `bak_cl9q0_tags` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_tags`
+--
+
+TRUNCATE TABLE `bak_cl9q0_tags`;
+--
 -- Contenu de la table `bak_cl9q0_tags`
 --
 
@@ -1625,6 +1890,11 @@ CREATE TABLE `bak_cl9q0_template_styles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_template_styles`
+--
+
+TRUNCATE TABLE `bak_cl9q0_template_styles`;
+--
 -- Contenu de la table `bak_cl9q0_template_styles`
 --
 
@@ -1647,6 +1917,11 @@ CREATE TABLE `bak_cl9q0_ucm_base` (
   `ucm_language_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_ucm_base`
+--
+
+TRUNCATE TABLE `bak_cl9q0_ucm_base`;
 --
 -- Contenu de la table `bak_cl9q0_ucm_base`
 --
@@ -1696,6 +1971,11 @@ CREATE TABLE `bak_cl9q0_ucm_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Contains core content data in name spaced fields';
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_ucm_content`
+--
+
+TRUNCATE TABLE `bak_cl9q0_ucm_content`;
+--
 -- Contenu de la table `bak_cl9q0_ucm_content`
 --
 
@@ -1721,6 +2001,11 @@ CREATE TABLE `bak_cl9q0_ucm_history` (
   `keep_forever` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0=auto delete; 1=keep'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_ucm_history`
+--
+
+TRUNCATE TABLE `bak_cl9q0_ucm_history`;
 --
 -- Contenu de la table `bak_cl9q0_ucm_history`
 --
@@ -1752,6 +2037,11 @@ CREATE TABLE `bak_cl9q0_updates` (
   `extra_query` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Available Updates';
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_updates`
+--
+
+TRUNCATE TABLE `bak_cl9q0_updates`;
 -- --------------------------------------------------------
 
 --
@@ -1768,6 +2058,11 @@ CREATE TABLE `bak_cl9q0_update_sites` (
   `extra_query` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Update Sites';
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_update_sites`
+--
+
+TRUNCATE TABLE `bak_cl9q0_update_sites`;
 --
 -- Contenu de la table `bak_cl9q0_update_sites`
 --
@@ -1789,6 +2084,11 @@ CREATE TABLE `bak_cl9q0_update_sites_extensions` (
   `extension_id` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Links extensions to update sites';
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_update_sites_extensions`
+--
+
+TRUNCATE TABLE `bak_cl9q0_update_sites_extensions`;
 --
 -- Contenu de la table `bak_cl9q0_update_sites_extensions`
 --
@@ -1814,6 +2114,11 @@ CREATE TABLE `bak_cl9q0_usergroups` (
   `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_usergroups`
+--
+
+TRUNCATE TABLE `bak_cl9q0_usergroups`;
 --
 -- Contenu de la table `bak_cl9q0_usergroups`
 --
@@ -1855,6 +2160,11 @@ CREATE TABLE `bak_cl9q0_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `bak_cl9q0_users`
+--
+
+TRUNCATE TABLE `bak_cl9q0_users`;
+--
 -- Contenu de la table `bak_cl9q0_users`
 --
 
@@ -1877,6 +2187,11 @@ CREATE TABLE `bak_cl9q0_user_keys` (
   `uastring` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_user_keys`
+--
+
+TRUNCATE TABLE `bak_cl9q0_user_keys`;
 -- --------------------------------------------------------
 
 --
@@ -1901,6 +2216,11 @@ CREATE TABLE `bak_cl9q0_user_notes` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_user_notes`
+--
+
+TRUNCATE TABLE `bak_cl9q0_user_notes`;
 -- --------------------------------------------------------
 
 --
@@ -1914,6 +2234,11 @@ CREATE TABLE `bak_cl9q0_user_profiles` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Simple user profile storage table';
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_user_profiles`
+--
+
+TRUNCATE TABLE `bak_cl9q0_user_profiles`;
 -- --------------------------------------------------------
 
 --
@@ -1925,6 +2250,11 @@ CREATE TABLE `bak_cl9q0_user_usergroup_map` (
   `group_id` int(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Foreign Key to #__usergroups.id'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_user_usergroup_map`
+--
+
+TRUNCATE TABLE `bak_cl9q0_user_usergroup_map`;
 --
 -- Contenu de la table `bak_cl9q0_user_usergroup_map`
 --
@@ -1942,6 +2272,11 @@ CREATE TABLE `bak_cl9q0_utf8_conversion` (
   `converted` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_utf8_conversion`
+--
+
+TRUNCATE TABLE `bak_cl9q0_utf8_conversion`;
 --
 -- Contenu de la table `bak_cl9q0_utf8_conversion`
 --
@@ -1962,6 +2297,11 @@ CREATE TABLE `bak_cl9q0_viewlevels` (
   `rules` varchar(5120) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'JSON encoded access control.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `bak_cl9q0_viewlevels`
+--
+
+TRUNCATE TABLE `bak_cl9q0_viewlevels`;
 --
 -- Contenu de la table `bak_cl9q0_viewlevels`
 --
@@ -1991,11 +2331,16 @@ CREATE TABLE `cl9q0_assets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_assets`
+--
+
+TRUNCATE TABLE `cl9q0_assets`;
+--
 -- Contenu de la table `cl9q0_assets`
 --
 
 INSERT INTO `cl9q0_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
-(1, 0, 0, 119, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
+(1, 0, 0, 121, 0, 'root.1', 'Root Asset', '{"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}'),
 (2, 1, 1, 2, 1, 'com_admin', 'com_admin', '{}'),
 (3, 1, 3, 6, 1, 'com_banners', 'com_banners', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (4, 1, 7, 8, 1, 'com_cache', 'com_cache', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
@@ -2012,25 +2357,25 @@ INSERT INTO `cl9q0_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (15, 1, 35, 36, 1, 'com_media', 'com_media', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}'),
 (16, 1, 37, 38, 1, 'com_menus', 'com_menus', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (17, 1, 39, 40, 1, 'com_messages', 'com_messages', '{"core.admin":{"7":1},"core.manage":{"7":1}}'),
-(18, 1, 41, 86, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(19, 1, 87, 90, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(20, 1, 91, 92, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
-(21, 1, 93, 94, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
-(22, 1, 95, 96, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(23, 1, 97, 98, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(24, 1, 99, 102, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(26, 1, 103, 104, 1, 'com_wrapper', 'com_wrapper', '{}'),
+(18, 1, 41, 88, 1, 'com_modules', 'com_modules', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(19, 1, 89, 92, 1, 'com_newsfeeds', 'com_newsfeeds', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(20, 1, 93, 94, 1, 'com_plugins', 'com_plugins', '{"core.admin":{"7":1},"core.manage":[],"core.edit":[],"core.edit.state":[]}'),
+(21, 1, 95, 96, 1, 'com_redirect', 'com_redirect', '{"core.admin":{"7":1},"core.manage":[]}'),
+(22, 1, 97, 98, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(23, 1, 99, 100, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(24, 1, 101, 104, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(26, 1, 105, 106, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 21, 2, 'com_content.category.2', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(30, 19, 88, 89, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(32, 24, 100, 101, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(33, 1, 105, 106, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
-(34, 1, 107, 108, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
-(35, 1, 109, 110, 1, 'com_tags', 'com_tags', '{"core.admin":[],"core.manage":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
-(36, 1, 111, 112, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
-(37, 1, 113, 114, 1, 'com_ajax', 'com_ajax', '{}'),
-(38, 1, 115, 116, 1, 'com_postinstall', 'com_postinstall', '{}'),
+(30, 19, 90, 91, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
+(32, 24, 102, 103, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
+(33, 1, 107, 108, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
+(34, 1, 109, 110, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
+(35, 1, 111, 112, 1, 'com_tags', 'com_tags', '{"core.admin":[],"core.manage":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
+(36, 1, 113, 114, 1, 'com_contenthistory', 'com_contenthistory', '{}'),
+(37, 1, 115, 116, 1, 'com_ajax', 'com_ajax', '{}'),
+(38, 1, 117, 118, 1, 'com_postinstall', 'com_postinstall', '{}'),
 (39, 18, 42, 43, 2, 'com_modules.module.1', 'Main Menu', '{"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (40, 18, 44, 45, 2, 'com_modules.module.2', 'Login', '{"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (41, 18, 46, 47, 2, 'com_modules.module.3', 'Popular Articles', '{"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
@@ -2054,7 +2399,8 @@ INSERT INTO `cl9q0_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 (59, 18, 82, 83, 2, 'com_modules.module.92', 'Image Module', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (60, 18, 84, 85, 2, 'com_modules.module.93', 'Search', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
 (61, 27, 19, 20, 3, 'com_content.article.1', 'Getting Started', '{"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1}}'),
-(62, 1, 117, 118, 1, '#__ucm_content.1', '#__ucm_content.1', '[]');
+(62, 1, 119, 120, 1, '#__ucm_content.1', '#__ucm_content.1', '[]'),
+(63, 18, 86, 87, 2, 'com_modules.module.94', 'Bureau', '{"core.delete":[],"core.edit":[],"core.edit.state":[],"module.edit.frontend":[]}');
 
 -- --------------------------------------------------------
 
@@ -2068,6 +2414,11 @@ CREATE TABLE `cl9q0_associations` (
   `key` char(32) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'The key for the association computed from an md5 on associated ids.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_associations`
+--
+
+TRUNCATE TABLE `cl9q0_associations`;
 -- --------------------------------------------------------
 
 --
@@ -2111,6 +2462,11 @@ CREATE TABLE `cl9q0_banners` (
   `version` int(10) UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_banners`
+--
+
+TRUNCATE TABLE `cl9q0_banners`;
 -- --------------------------------------------------------
 
 --
@@ -2134,6 +2490,11 @@ CREATE TABLE `cl9q0_banner_clients` (
   `track_impressions` tinyint(4) NOT NULL DEFAULT '-1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_banner_clients`
+--
+
+TRUNCATE TABLE `cl9q0_banner_clients`;
 -- --------------------------------------------------------
 
 --
@@ -2147,6 +2508,11 @@ CREATE TABLE `cl9q0_banner_tracks` (
   `count` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_banner_tracks`
+--
+
+TRUNCATE TABLE `cl9q0_banner_tracks`;
 -- --------------------------------------------------------
 
 --
@@ -2183,6 +2549,11 @@ CREATE TABLE `cl9q0_categories` (
   `version` int(10) UNSIGNED NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_categories`
+--
+
+TRUNCATE TABLE `cl9q0_categories`;
 --
 -- Contenu de la table `cl9q0_categories`
 --
@@ -2247,6 +2618,11 @@ CREATE TABLE `cl9q0_contact_details` (
   `hits` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_contact_details`
+--
+
+TRUNCATE TABLE `cl9q0_contact_details`;
 -- --------------------------------------------------------
 
 --
@@ -2287,11 +2663,16 @@ CREATE TABLE `cl9q0_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_content`
+--
+
+TRUNCATE TABLE `cl9q0_content`;
+--
 -- Contenu de la table `cl9q0_content`
 --
 
 INSERT INTO `cl9q0_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `fulltext`, `state`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`) VALUES
-(1, 61, 'Comment débuter ?', 'comment-debuter', '<p>La création d\'un site web avec Joomla est simple, le déploiement de ce site exemple vous y aidera. <br />Les quelques principes de base présentés ci-dessous vous guideront dans la compréhension de ce logiciel.</p><h3>Qu\'est-ce qu\'un Système de Gestion de Contenu ?</h3><p>Un   système de gestion de contenu (SGC ou CMS de l\'anglais Content  Management System) est un logiciel qui vous permet de créer  et gérer  des pages Web facilement, séparant la création des contenus de la  gestion technique nécessaire à une diffusion sur le web.</p><p>Le  contenu rédactionnel est stocké et restitué par une base de données, l\'aspect (police, taille, couleur, emplacement, etc.) est géré par un  template (habillage du site). Le logiciel Joomla permet d\'unir ces deux  structures de manière conviviale et de les rendre accessibles au plus  grand nombre d\'utilisateurs.</p><h3>Deux interfaces</h3><p>Un site Joomla est structuré en deux parties distinctes : la partie visible du site appelée «Frontal» de <em>Frontend</em> en anglais et, la partie d\'administration pure appelée «Administration» de <em>Administrator</em>.</p><h3>Administration</h3><p>Vous pouvez accéder à l\'administration en cliquant sur le sur le lien «Administration» présent dans le module de menu «Menu membre» visible après vous être connecté sur le site ou, en  ajoutant  <em>/administrator</em> dans l\'URL après le nom de domaine (exemple : www.mon-domaine.com/administrator).</p><p>Utilisez le nom d\'utilisateur et le mot de passe créés lors de l\'installation de Joomla.</p><h3>Frontal</h3><p>Si votre profil possède les droits suffisants, vous pouvez créer des articles et les éditer depuis l\'interface frontale du site.</p><p>Connectez-vous par le module «Connexion» en utilisant le nom d\'utilisateur et le mot de passe créés lors de l\'installation de Joomla.</p><h3>Créer un article en frontal</h3><p>Lorsque vous êtes connecté, un nouveau menu nommé «Menu Membres» apparaît. Cliquez sur le lien  «Créer un article» pour afficher l\'éditeur de texte et d\'insertion de médias.</p><p>Pour enregistrer l\'article, vous devez spécifier à quelle catégorie il appartient ainsi que son statut de publication. Pour le modifier, cliquez sur l\'icône d\'édition <img src="media/system/images/edit.png" border="0" alt="Editer un article" width="18" height="18" style="vertical-align: middle;" />.</p><p>Vous pouvez travailler sur des articles non publiés ou de publication programmée dans le temps et, dans le cadre d\'un travail collaboratif, ne les rendre visibles qu\'à un groupe d\'utilisateurs donnés avant de les rendre publics.</p><h3>En savoir plus</h3><p>Une pleine utilisation de Joomla requiert certaines connaissances approfondies que vous pourrez acquérir dans la <a href="http://docs.joomla.org/" target="_blank">documentation officielle de Joomla</a> ou sur le <a href="http://aide.joomla.fr/" target="_blank">site d\'aide francophone</a> et dans le <a href="http://forum.joomla.org/" target="_blank">forum officiel</a> ou le <a href="http://forum.joomla.fr/" target="_blank">forum francophone</a>.</p>', '', 1, 2, '2013-11-16 00:00:00', 123, '', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', '2013-11-16 00:00:00', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 1, 0, '', '', 1, 1, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', '');
+(1, 61, 'Comment débuter ?', 'comment-debuter', '<p>La création d\'un site web avec Joomla est simple, le déploiement de ce site exemple vous y aidera. <br />Les quelques principes de base présentés ci-dessous vous guideront dans la compréhension de ce logiciel.</p><h3>Qu\'est-ce qu\'un Système de Gestion de Contenu ?</h3><p>Un   système de gestion de contenu (SGC ou CMS de l\'anglais Content  Management System) est un logiciel qui vous permet de créer  et gérer  des pages Web facilement, séparant la création des contenus de la  gestion technique nécessaire à une diffusion sur le web.</p><p>Le  contenu rédactionnel est stocké et restitué par une base de données, l\'aspect (police, taille, couleur, emplacement, etc.) est géré par un  template (habillage du site). Le logiciel Joomla permet d\'unir ces deux  structures de manière conviviale et de les rendre accessibles au plus  grand nombre d\'utilisateurs.</p><h3>Deux interfaces</h3><p>Un site Joomla est structuré en deux parties distinctes : la partie visible du site appelée «Frontal» de <em>Frontend</em> en anglais et, la partie d\'administration pure appelée «Administration» de <em>Administrator</em>.</p><h3>Administration</h3><p>Vous pouvez accéder à l\'administration en cliquant sur le sur le lien «Administration» présent dans le module de menu «Menu membre» visible après vous être connecté sur le site ou, en  ajoutant  <em>/administrator</em> dans l\'URL après le nom de domaine (exemple : www.mon-domaine.com/administrator).</p><p>Utilisez le nom d\'utilisateur et le mot de passe créés lors de l\'installation de Joomla.</p><h3>Frontal</h3><p>Si votre profil possède les droits suffisants, vous pouvez créer des articles et les éditer depuis l\'interface frontale du site.</p><p>Connectez-vous par le module «Connexion» en utilisant le nom d\'utilisateur et le mot de passe créés lors de l\'installation de Joomla.</p><h3>Créer un article en frontal</h3><p>Lorsque vous êtes connecté, un nouveau menu nommé «Menu Membres» apparaît. Cliquez sur le lien  «Créer un article» pour afficher l\'éditeur de texte et d\'insertion de médias.</p><p>Pour enregistrer l\'article, vous devez spécifier à quelle catégorie il appartient ainsi que son statut de publication. Pour le modifier, cliquez sur l\'icône d\'édition <img src="media/system/images/edit.png" border="0" alt="Editer un article" width="18" height="18" style="vertical-align: middle;" />.</p><p>Vous pouvez travailler sur des articles non publiés ou de publication programmée dans le temps et, dans le cadre d\'un travail collaboratif, ne les rendre visibles qu\'à un groupe d\'utilisateurs donnés avant de les rendre publics.</p><h3>En savoir plus</h3><p>Une pleine utilisation de Joomla requiert certaines connaissances approfondies que vous pourrez acquérir dans la <a href="http://docs.joomla.org/" target="_blank">documentation officielle de Joomla</a> ou sur le <a href="http://aide.joomla.fr/" target="_blank">site d\'aide francophone</a> et dans le <a href="http://forum.joomla.org/" target="_blank">forum officiel</a> ou le <a href="http://forum.joomla.fr/" target="_blank">forum francophone</a>.</p>', '', 1, 2, '2013-11-16 00:00:00', 123, '', '0000-00-00 00:00:00', 0, 0, '0000-00-00 00:00:00', '2013-11-16 00:00:00', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 1, 0, '', '', 1, 2, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', '');
 
 -- --------------------------------------------------------
 
@@ -2308,6 +2689,11 @@ CREATE TABLE `cl9q0_contentitem_tag_map` (
   `type_id` mediumint(8) NOT NULL COMMENT 'PK from the content_type table'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Maps items from content tables to tags';
 
+--
+-- Vider la table avant d'insérer `cl9q0_contentitem_tag_map`
+--
+
+TRUNCATE TABLE `cl9q0_contentitem_tag_map`;
 --
 -- Contenu de la table `cl9q0_contentitem_tag_map`
 --
@@ -2326,6 +2712,11 @@ CREATE TABLE `cl9q0_content_frontpage` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_content_frontpage`
+--
+
+TRUNCATE TABLE `cl9q0_content_frontpage`;
 -- --------------------------------------------------------
 
 --
@@ -2339,6 +2730,11 @@ CREATE TABLE `cl9q0_content_rating` (
   `lastip` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_content_rating`
+--
+
+TRUNCATE TABLE `cl9q0_content_rating`;
 -- --------------------------------------------------------
 
 --
@@ -2356,6 +2752,11 @@ CREATE TABLE `cl9q0_content_types` (
   `content_history_options` varchar(5120) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'JSON string for com_contenthistory options'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_content_types`
+--
+
+TRUNCATE TABLE `cl9q0_content_types`;
 --
 -- Contenu de la table `cl9q0_content_types`
 --
@@ -2386,6 +2787,11 @@ CREATE TABLE `cl9q0_core_log_searches` (
   `hits` int(10) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_core_log_searches`
+--
+
+TRUNCATE TABLE `cl9q0_core_log_searches`;
 -- --------------------------------------------------------
 
 --
@@ -2412,6 +2818,11 @@ CREATE TABLE `cl9q0_extensions` (
   `state` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_extensions`
+--
+
+TRUNCATE TABLE `cl9q0_extensions`;
 --
 -- Contenu de la table `cl9q0_extensions`
 --
@@ -2448,7 +2859,7 @@ INSERT INTO `cl9q0_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (31, 'com_ajax', 'component', 'com_ajax', '', 1, 1, 1, 1, '{"name":"com_ajax","type":"component","creationDate":"August 2013","author":"Joomla! Project","copyright":"(C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.2.0","description":"COM_AJAX_XML_DESCRIPTION","group":"","filename":"ajax"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (32, 'com_postinstall', 'component', 'com_postinstall', '', 1, 1, 1, 1, '{"name":"com_postinstall","type":"component","creationDate":"September 2013","author":"Joomla! Project","copyright":"(C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.2.0","description":"COM_POSTINSTALL_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (102, 'phputf8', 'library', 'phputf8', '', 0, 1, 1, 1, '{"name":"phputf8","type":"library","creationDate":"2006","author":"Harry Fuecks","copyright":"Copyright various authors","authorEmail":"hfuecks@gmail.com","authorUrl":"http:\\/\\/sourceforge.net\\/projects\\/phputf8","version":"0.5","description":"LIB_PHPUTF8_XML_DESCRIPTION","group":"","filename":"phputf8"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"https:\\/\\/www.joomla.org","version":"13.1","description":"LIB_JOOMLA_XML_DESCRIPTION","group":"","filename":"joomla"}', '{"mediaversion":"316dd6dd9ee5fe8d756d16483e6b6387"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(103, 'Joomla! Platform', 'library', 'joomla', '', 0, 1, 1, 1, '{"name":"Joomla! Platform","type":"library","creationDate":"2008","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"https:\\/\\/www.joomla.org","version":"13.1","description":"LIB_JOOMLA_XML_DESCRIPTION","group":"","filename":"joomla"}', '{"mediaversion":"2c08316aafddfb594f0a0b8f7199bfbb"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (104, 'IDNA Convert', 'library', 'idna_convert', '', 0, 1, 1, 1, '{"name":"IDNA Convert","type":"library","creationDate":"2004","author":"phlyLabs","copyright":"2004-2011 phlyLabs Berlin, http:\\/\\/phlylabs.de","authorEmail":"phlymail@phlylabs.de","authorUrl":"http:\\/\\/phlylabs.de","version":"0.8.0","description":"LIB_IDNA_XML_DESCRIPTION","group":"","filename":"idna_convert"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (105, 'FOF', 'library', 'fof', '', 0, 1, 1, 1, '{"name":"FOF","type":"library","creationDate":"2015-04-22 13:15:32","author":"Nicholas K. Dionysopoulos \\/ Akeeba Ltd","copyright":"(C)2011-2015 Nicholas K. Dionysopoulos","authorEmail":"nicholas@akeebabackup.com","authorUrl":"https:\\/\\/www.akeebabackup.com","version":"2.4.3","description":"LIB_FOF_XML_DESCRIPTION","group":"","filename":"fof"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (106, 'PHPass', 'library', 'phpass', '', 0, 1, 1, 1, '{"name":"PHPass","type":"library","creationDate":"2004-2006","author":"Solar Designer","copyright":"","authorEmail":"solar@openwall.com","authorUrl":"http:\\/\\/www.openwall.com\\/phpass\\/","version":"0.3","description":"LIB_PHPASS_XML_DESCRIPTION","group":"","filename":"phpass"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -2542,9 +2953,9 @@ INSERT INTO `cl9q0_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (449, 'plg_authentication_cookie', 'plugin', 'cookie', 'authentication', 0, 1, 1, 0, '{"name":"plg_authentication_cookie","type":"plugin","creationDate":"July 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.0.0","description":"PLG_AUTH_COOKIE_XML_DESCRIPTION","group":"","filename":"cookie"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (450, 'plg_twofactorauth_yubikey', 'plugin', 'yubikey', 'twofactorauth', 0, 0, 1, 0, '{"name":"plg_twofactorauth_yubikey","type":"plugin","creationDate":"September 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.2.0","description":"PLG_TWOFACTORAUTH_YUBIKEY_XML_DESCRIPTION","group":"","filename":"yubikey"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (451, 'plg_search_tags', 'plugin', 'tags', 'search', 0, 1, 1, 0, '{"name":"plg_search_tags","type":"plugin","creationDate":"March 2014","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.0.0","description":"PLG_SEARCH_TAGS_XML_DESCRIPTION","group":"","filename":"tags"}', '{"search_limit":"50","show_tagged_items":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(452, 'plg_system_updatenotification', 'plugin', 'updatenotification', 'system', 0, 1, 1, 0, '{"name":"plg_system_updatenotification","type":"plugin","creationDate":"May 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION","group":"","filename":"updatenotification"}', '{"lastrun":1474558535}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(452, 'plg_system_updatenotification', 'plugin', 'updatenotification', 'system', 0, 1, 1, 0, '{"name":"plg_system_updatenotification","type":"plugin","creationDate":"May 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_UPDATENOTIFICATION_XML_DESCRIPTION","group":"","filename":"updatenotification"}', '{"lastrun":1474795755}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (453, 'plg_editors-xtd_module', 'plugin', 'module', 'editors-xtd', 0, 1, 1, 0, '{"name":"plg_editors-xtd_module","type":"plugin","creationDate":"October 2015","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_MODULE_XML_DESCRIPTION","group":"","filename":"module"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(454, 'plg_system_stats', 'plugin', 'stats', 'system', 0, 1, 1, 0, '{"name":"plg_system_stats","type":"plugin","creationDate":"November 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_STATS_XML_DESCRIPTION","group":"","filename":"stats"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(454, 'plg_system_stats', 'plugin', 'stats', 'system', 0, 1, 1, 0, '{"name":"plg_system_stats","type":"plugin","creationDate":"November 2013","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.5.0","description":"PLG_SYSTEM_STATS_XML_DESCRIPTION","group":"","filename":"stats"}', '{"mode":3,"lastrun":1474796021,"unique_id":"b97bef3309f95054416df9a443a55d81aef11fee","interval":12}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (455, 'plg_installer_packageinstaller', 'plugin', 'packageinstaller', 'installer', 0, 1, 1, 1, '{"name":"plg_installer_packageinstaller","type":"plugin","creationDate":"May 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.0","description":"PLG_INSTALLER_PACKAGEINSTALLER_PLUGIN_XML_DESCRIPTION","group":"","filename":"packageinstaller"}', '', '', '', 0, '0000-00-00 00:00:00', 1, 0),
 (456, 'PLG_INSTALLER_FOLDERINSTALLER', 'plugin', 'folderinstaller', 'installer', 0, 1, 1, 1, '{"name":"PLG_INSTALLER_FOLDERINSTALLER","type":"plugin","creationDate":"May 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.0","description":"PLG_INSTALLER_FOLDERINSTALLER_PLUGIN_XML_DESCRIPTION","group":"","filename":"folderinstaller"}', '', '', '', 0, '0000-00-00 00:00:00', 2, 0),
 (457, 'PLG_INSTALLER_URLINSTALLER', 'plugin', 'urlinstaller', 'installer', 0, 1, 1, 1, '{"name":"PLG_INSTALLER_URLINSTALLER","type":"plugin","creationDate":"May 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.0","description":"PLG_INSTALLER_URLINSTALLER_PLUGIN_XML_DESCRIPTION","group":"","filename":"urlinstaller"}', '', '', '', 0, '0000-00-00 00:00:00', 3, 0),
@@ -2558,7 +2969,8 @@ INSERT INTO `cl9q0_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (603, 'French (FR)', 'language', 'fr-FR', '', 1, 1, 0, 0, '{"name":"French (FR)","type":"language","creationDate":"June 2016","author":"French translation team : joomla.fr","copyright":"Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.","authorEmail":"traduction@joomla.fr","authorUrl":"http:\\/\\/www.joomla.fr","version":"3.6.2.1","description":"French administrator language for Joomla 3","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (605, 'French Language pack', 'package', 'pkg_fr-FR', '', 0, 1, 1, 0, '{"name":"French Language pack","type":"package","creationDate":"05\\/08\\/2016","author":"French translation team : joomla.fr","copyright":"Copyright (C) 2005 - 2016 Joomla.fr and Open Source Matters, Inc. All rights reserved.","authorEmail":"traduction@joomla.fr","authorUrl":"http:\\/\\/joomla.fr","version":"3.6.2.1","description":"<div style=\\"text-align:left;\\">\\n<h3>Joomla! 3.6.2 Full French (fr-FR) Language Package - Version 3.6.2.1<\\/h3>\\n<h3>Paquet de langue Joomla! 3.6.2 fran\\u00e7ais (fr-FR) complet - Version 3.6.2.1<\\/h3>\\n<\\/div>","group":"","filename":"pkg_fr-FR"}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (700, 'files_joomla', 'file', 'joomla', '', 0, 1, 1, 1, '{"name":"files_joomla","type":"file","creationDate":"August 2016","author":"Joomla! Project","copyright":"(C) 2005 - 2016 Open Source Matters. All rights reserved","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.2","description":"FILES_JOOMLA_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(802, 'English (en-GB) Language Pack', 'package', 'pkg_en-GB', '', 0, 1, 1, 1, '{"name":"English (en-GB) Language Pack","type":"package","creationDate":"August 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.2.1","description":"en-GB language pack","group":"","filename":"pkg_en-GB"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(802, 'English (en-GB) Language Pack', 'package', 'pkg_en-GB', '', 0, 1, 1, 1, '{"name":"English (en-GB) Language Pack","type":"package","creationDate":"August 2016","author":"Joomla! Project","copyright":"Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"3.6.2.1","description":"en-GB language pack","group":"","filename":"pkg_en-GB"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(803, 'Bureau', 'module', 'mod_bureau', '', 0, 1, 0, 0, '{"name":"Bureau","type":"module","creationDate":"Unknown","author":"Maxime BLAISE","copyright":"","authorEmail":"","authorUrl":"","version":"1.0.0","description":"Module d\'affichage du bureau.","group":"","filename":"mod_bureau"}', '[]', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2583,6 +2995,11 @@ CREATE TABLE `cl9q0_finder_filters` (
   `params` mediumtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_filters`
+--
+
+TRUNCATE TABLE `cl9q0_finder_filters`;
 -- --------------------------------------------------------
 
 --
@@ -2611,6 +3028,11 @@ CREATE TABLE `cl9q0_finder_links` (
   `object` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links`;
 -- --------------------------------------------------------
 
 --
@@ -2623,6 +3045,11 @@ CREATE TABLE `cl9q0_finder_links_terms0` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms0`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms0`;
 -- --------------------------------------------------------
 
 --
@@ -2635,6 +3062,11 @@ CREATE TABLE `cl9q0_finder_links_terms1` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms1`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms1`;
 -- --------------------------------------------------------
 
 --
@@ -2647,6 +3079,11 @@ CREATE TABLE `cl9q0_finder_links_terms2` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms2`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms2`;
 -- --------------------------------------------------------
 
 --
@@ -2659,6 +3096,11 @@ CREATE TABLE `cl9q0_finder_links_terms3` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms3`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms3`;
 -- --------------------------------------------------------
 
 --
@@ -2671,6 +3113,11 @@ CREATE TABLE `cl9q0_finder_links_terms4` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms4`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms4`;
 -- --------------------------------------------------------
 
 --
@@ -2683,6 +3130,11 @@ CREATE TABLE `cl9q0_finder_links_terms5` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms5`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms5`;
 -- --------------------------------------------------------
 
 --
@@ -2695,6 +3147,11 @@ CREATE TABLE `cl9q0_finder_links_terms6` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms6`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms6`;
 -- --------------------------------------------------------
 
 --
@@ -2707,6 +3164,11 @@ CREATE TABLE `cl9q0_finder_links_terms7` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms7`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms7`;
 -- --------------------------------------------------------
 
 --
@@ -2719,6 +3181,11 @@ CREATE TABLE `cl9q0_finder_links_terms8` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms8`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms8`;
 -- --------------------------------------------------------
 
 --
@@ -2731,6 +3198,11 @@ CREATE TABLE `cl9q0_finder_links_terms9` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_terms9`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_terms9`;
 -- --------------------------------------------------------
 
 --
@@ -2743,6 +3215,11 @@ CREATE TABLE `cl9q0_finder_links_termsa` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termsa`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termsa`;
 -- --------------------------------------------------------
 
 --
@@ -2755,6 +3232,11 @@ CREATE TABLE `cl9q0_finder_links_termsb` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termsb`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termsb`;
 -- --------------------------------------------------------
 
 --
@@ -2767,6 +3249,11 @@ CREATE TABLE `cl9q0_finder_links_termsc` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termsc`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termsc`;
 -- --------------------------------------------------------
 
 --
@@ -2779,6 +3266,11 @@ CREATE TABLE `cl9q0_finder_links_termsd` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termsd`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termsd`;
 -- --------------------------------------------------------
 
 --
@@ -2791,6 +3283,11 @@ CREATE TABLE `cl9q0_finder_links_termse` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termse`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termse`;
 -- --------------------------------------------------------
 
 --
@@ -2803,6 +3300,11 @@ CREATE TABLE `cl9q0_finder_links_termsf` (
   `weight` float UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_links_termsf`
+--
+
+TRUNCATE TABLE `cl9q0_finder_links_termsf`;
 -- --------------------------------------------------------
 
 --
@@ -2818,6 +3320,11 @@ CREATE TABLE `cl9q0_finder_taxonomy` (
   `ordering` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_taxonomy`
+--
+
+TRUNCATE TABLE `cl9q0_finder_taxonomy`;
 --
 -- Contenu de la table `cl9q0_finder_taxonomy`
 --
@@ -2836,6 +3343,11 @@ CREATE TABLE `cl9q0_finder_taxonomy_map` (
   `node_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_taxonomy_map`
+--
+
+TRUNCATE TABLE `cl9q0_finder_taxonomy_map`;
 -- --------------------------------------------------------
 
 --
@@ -2854,6 +3366,11 @@ CREATE TABLE `cl9q0_finder_terms` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_terms`
+--
+
+TRUNCATE TABLE `cl9q0_finder_terms`;
 -- --------------------------------------------------------
 
 --
@@ -2865,6 +3382,11 @@ CREATE TABLE `cl9q0_finder_terms_common` (
   `language` varchar(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_terms_common`
+--
+
+TRUNCATE TABLE `cl9q0_finder_terms_common`;
 --
 -- Contenu de la table `cl9q0_finder_terms_common`
 --
@@ -3102,6 +3624,11 @@ CREATE TABLE `cl9q0_finder_tokens` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_tokens`
+--
+
+TRUNCATE TABLE `cl9q0_finder_tokens`;
 -- --------------------------------------------------------
 
 --
@@ -3122,6 +3649,11 @@ CREATE TABLE `cl9q0_finder_tokens_aggregate` (
   `language` char(3) NOT NULL DEFAULT ''
 ) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_tokens_aggregate`
+--
+
+TRUNCATE TABLE `cl9q0_finder_tokens_aggregate`;
 -- --------------------------------------------------------
 
 --
@@ -3134,6 +3666,11 @@ CREATE TABLE `cl9q0_finder_types` (
   `mime` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Vider la table avant d'insérer `cl9q0_finder_types`
+--
+
+TRUNCATE TABLE `cl9q0_finder_types`;
 -- --------------------------------------------------------
 
 --
@@ -3157,6 +3694,11 @@ CREATE TABLE `cl9q0_languages` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_languages`
+--
+
+TRUNCATE TABLE `cl9q0_languages`;
 --
 -- Contenu de la table `cl9q0_languages`
 --
@@ -3198,6 +3740,11 @@ CREATE TABLE `cl9q0_menu` (
   `client_id` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_menu`
+--
+
+TRUNCATE TABLE `cl9q0_menu`;
 --
 -- Contenu de la table `cl9q0_menu`
 --
@@ -3245,6 +3792,11 @@ CREATE TABLE `cl9q0_menu_types` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_menu_types`
+--
+
+TRUNCATE TABLE `cl9q0_menu_types`;
+--
 -- Contenu de la table `cl9q0_menu_types`
 --
 
@@ -3270,6 +3822,11 @@ CREATE TABLE `cl9q0_messages` (
   `message` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_messages`
+--
+
+TRUNCATE TABLE `cl9q0_messages`;
 -- --------------------------------------------------------
 
 --
@@ -3282,6 +3839,11 @@ CREATE TABLE `cl9q0_messages_cfg` (
   `cfg_value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_messages_cfg`
+--
+
+TRUNCATE TABLE `cl9q0_messages_cfg`;
 -- --------------------------------------------------------
 
 --
@@ -3310,6 +3872,11 @@ CREATE TABLE `cl9q0_modules` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_modules`
+--
+
+TRUNCATE TABLE `cl9q0_modules`;
+--
 -- Contenu de la table `cl9q0_modules`
 --
 
@@ -3335,7 +3902,8 @@ INSERT INTO `cl9q0_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orde
 (90, 57, 'Derniers articles', '', '', 1, 'position-7', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_articles_latest', 1, 1, '{"catid":[""],"count":"5","show_featured":"","ordering":"c_dsc","user_id":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (91, 58, 'Menu utilisateur', '', '', 3, 'position-7', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 1, '{"menutype":"usermenu","base":"","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"_menu","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (92, 59, 'Images aléatoire', '', '<p><img src="images/headers/blue-flower.jpg" alt="Blue Flower" /></p>', 0, 'position-3', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 0, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(93, 60, 'Recherche', '', '', 0, 'position-0', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_search', 1, 1, '{"label":"","width":"20","text":"","button":"0","button_pos":"right","imagebutton":"1","button_text":"","opensearch":"1","opensearch_title":"","set_itemid":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
+(93, 60, 'Recherche', '', '', 0, 'position-0', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_search', 1, 1, '{"label":"","width":"20","text":"","button":"0","button_pos":"right","imagebutton":"1","button_text":"","opensearch":"1","opensearch_title":"","set_itemid":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
+(94, 63, 'Bureau', '', '', 1, 'position-0', 0, '0000-00-00 00:00:00', '2016-09-25 09:32:14', '0000-00-00 00:00:00', 1, 'mod_bureau', 1, 1, '{"lang":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*');
 
 -- --------------------------------------------------------
 
@@ -3348,6 +3916,11 @@ CREATE TABLE `cl9q0_modules_menu` (
   `menuid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_modules_menu`
+--
+
+TRUNCATE TABLE `cl9q0_modules_menu`;
 --
 -- Contenu de la table `cl9q0_modules_menu`
 --
@@ -3376,7 +3949,8 @@ INSERT INTO `cl9q0_modules_menu` (`moduleid`, `menuid`) VALUES
 (90, 0),
 (91, 0),
 (92, 0),
-(93, 0);
+(93, 0),
+(94, 0);
 
 -- --------------------------------------------------------
 
@@ -3417,6 +3991,11 @@ CREATE TABLE `cl9q0_newsfeeds` (
   `images` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_newsfeeds`
+--
+
+TRUNCATE TABLE `cl9q0_newsfeeds`;
 -- --------------------------------------------------------
 
 --
@@ -3430,6 +4009,11 @@ CREATE TABLE `cl9q0_overrider` (
   `file` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_overrider`
+--
+
+TRUNCATE TABLE `cl9q0_overrider`;
 -- --------------------------------------------------------
 
 --
@@ -3453,6 +4037,11 @@ CREATE TABLE `cl9q0_postinstall_messages` (
   `enabled` tinyint(3) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_postinstall_messages`
+--
+
+TRUNCATE TABLE `cl9q0_postinstall_messages`;
 --
 -- Contenu de la table `cl9q0_postinstall_messages`
 --
@@ -3481,6 +4070,11 @@ CREATE TABLE `cl9q0_redirect_links` (
   `header` smallint(3) NOT NULL DEFAULT '301'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_redirect_links`
+--
+
+TRUNCATE TABLE `cl9q0_redirect_links`;
 -- --------------------------------------------------------
 
 --
@@ -3492,6 +4086,11 @@ CREATE TABLE `cl9q0_schemas` (
   `version_id` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_schemas`
+--
+
+TRUNCATE TABLE `cl9q0_schemas`;
 --
 -- Contenu de la table `cl9q0_schemas`
 --
@@ -3516,11 +4115,17 @@ CREATE TABLE `cl9q0_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_session`
+--
+
+TRUNCATE TABLE `cl9q0_session`;
+--
 -- Contenu de la table `cl9q0_session`
 --
 
 INSERT INTO `cl9q0_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('9hlelep3f5efjllcv0bsdaamp1', 0, 1, '1474558539', 'joomla|s:644:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToxO3M6NToidGltZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NToic3RhcnQiO2k6MTQ3NDU1ODUyMztzOjQ6Imxhc3QiO2k6MTQ3NDU1ODUyMztzOjM6Im5vdyI7aToxNDc0NTU4NTIzO31zOjU6InRva2VuIjtzOjMyOiIzN21tckhISzZ5TzdrZVRpUW9sZ1lKRjVheEFyOGZYcSI7fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mjp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7Tzo1OiJKVXNlciI6MTp7czoyOiJpZCI7aTowO319fXM6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 0, '');
+('6sn1lokn84vjvcivinvv038io2', 1, 0, '1474796195', 'joomla|s:1652:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjo0OntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aTo0NDtzOjU6InRpbWVyIjtPOjg6InN0ZENsYXNzIjozOntzOjU6InN0YXJ0IjtpOjE0NzQ3OTU3NTA7czo0OiJsYXN0IjtpOjE0NzQ3OTYxOTM7czozOiJub3ciO2k6MTQ3NDc5NjE5Mzt9czo1OiJ0b2tlbiI7czozMjoiU0poWXladXpBYlhaQnJMME9HUTN5dFRGZzJzdkE3T0kiO31zOjg6InJlZ2lzdHJ5IjtPOjI0OiJKb29tbGFcUmVnaXN0cnlcUmVnaXN0cnkiOjI6e3M6NzoiACoAZGF0YSI7Tzo4OiJzdGRDbGFzcyI6Mzp7czoxMzoiY29tX2luc3RhbGxlciI7Tzo4OiJzdGRDbGFzcyI6Mzp7czo3OiJtZXNzYWdlIjtzOjA6IiI7czoxNzoiZXh0ZW5zaW9uX21lc3NhZ2UiO3M6MDoiIjtzOjEyOiJyZWRpcmVjdF91cmwiO047fXM6MTE6ImNvbV9tb2R1bGVzIjtPOjg6InN0ZENsYXNzIjoyOntzOjQ6ImVkaXQiO086ODoic3RkQ2xhc3MiOjE6e3M6NjoibW9kdWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjI6ImlkIjthOjA6e31zOjQ6ImRhdGEiO047fX1zOjM6ImFkZCI7Tzo4OiJzdGRDbGFzcyI6MTp7czo2OiJtb2R1bGUiO086ODoic3RkQ2xhc3MiOjI6e3M6MTI6ImV4dGVuc2lvbl9pZCI7TjtzOjY6InBhcmFtcyI7Tjt9fX1zOjEzOiJjb21fdGVtcGxhdGVzIjtPOjg6InN0ZENsYXNzIjoyOntzOjY6InN0eWxlcyI7Tzo4OiJzdGRDbGFzcyI6NDp7czo2OiJmaWx0ZXIiO2E6Mzp7czo2OiJzZWFyY2giO3M6MDoiIjtzOjg6Im1lbnVpdGVtIjtzOjA6IiI7czo4OiJ0ZW1wbGF0ZSI7czowOiIiO31zOjk6ImNsaWVudF9pZCI7czoxOiIwIjtzOjQ6Imxpc3QiO2E6Mjp7czoxMjoiZnVsbG9yZGVyaW5nIjtzOjA6IiI7czo1OiJsaW1pdCI7czoyOiIyMCI7fXM6MTA6ImxpbWl0c3RhcnQiO2k6MDt9czo0OiJlZGl0IjtPOjg6InN0ZENsYXNzIjoxOntzOjU6InN0eWxlIjtPOjg6InN0ZENsYXNzIjoyOntzOjI6ImlkIjthOjA6e31zOjQ6ImRhdGEiO047fX19fXM6OToic2VwYXJhdG9yIjtzOjE6Ii4iO31zOjQ6InVzZXIiO086NToiSlVzZXIiOjE6e3M6MjoiaWQiO3M6MzoiMTIzIjt9czoxMToiYXBwbGljYXRpb24iO086ODoic3RkQ2xhc3MiOjE6e3M6NToicXVldWUiO047fX19czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fQ==";', 123, 'Webmaster'),
+('99gjbp6ajmoq8i7r51vfmapp72', 0, 1, '1474796836', 'joomla|s:644:"TzoyNDoiSm9vbWxhXFJlZ2lzdHJ5XFJlZ2lzdHJ5IjoyOntzOjc6IgAqAGRhdGEiO086ODoic3RkQ2xhc3MiOjE6e3M6OToiX19kZWZhdWx0IjtPOjg6InN0ZENsYXNzIjozOntzOjc6InNlc3Npb24iO086ODoic3RkQ2xhc3MiOjM6e3M6NzoiY291bnRlciI7aToyO3M6NToidGltZXIiO086ODoic3RkQ2xhc3MiOjM6e3M6NToic3RhcnQiO2k6MTQ3NDc5NTk4MztzOjQ6Imxhc3QiO2k6MTQ3NDc5NTk4MztzOjM6Im5vdyI7aToxNDc0Nzk2ODM0O31zOjU6InRva2VuIjtzOjMyOiJ4WTV2eXlUVnpteGc4UjM5WDhiU3o5d1JYRklWNXFGNiI7fXM6ODoicmVnaXN0cnkiO086MjQ6Ikpvb21sYVxSZWdpc3RyeVxSZWdpc3RyeSI6Mjp7czo3OiIAKgBkYXRhIjtPOjg6InN0ZENsYXNzIjowOnt9czo5OiJzZXBhcmF0b3IiO3M6MToiLiI7fXM6NDoidXNlciI7Tzo1OiJKVXNlciI6MTp7czoyOiJpZCI7aTowO319fXM6OToic2VwYXJhdG9yIjtzOjE6Ii4iO30=";', 0, '');
 
 -- --------------------------------------------------------
 
@@ -3562,6 +4167,11 @@ CREATE TABLE `cl9q0_tags` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_tags`
+--
+
+TRUNCATE TABLE `cl9q0_tags`;
+--
 -- Contenu de la table `cl9q0_tags`
 --
 
@@ -3585,6 +4195,11 @@ CREATE TABLE `cl9q0_template_styles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_template_styles`
+--
+
+TRUNCATE TABLE `cl9q0_template_styles`;
+--
 -- Contenu de la table `cl9q0_template_styles`
 --
 
@@ -3607,6 +4222,11 @@ CREATE TABLE `cl9q0_ucm_base` (
   `ucm_language_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_ucm_base`
+--
+
+TRUNCATE TABLE `cl9q0_ucm_base`;
 --
 -- Contenu de la table `cl9q0_ucm_base`
 --
@@ -3656,6 +4276,11 @@ CREATE TABLE `cl9q0_ucm_content` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Contains core content data in name spaced fields';
 
 --
+-- Vider la table avant d'insérer `cl9q0_ucm_content`
+--
+
+TRUNCATE TABLE `cl9q0_ucm_content`;
+--
 -- Contenu de la table `cl9q0_ucm_content`
 --
 
@@ -3681,6 +4306,11 @@ CREATE TABLE `cl9q0_ucm_history` (
   `keep_forever` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0=auto delete; 1=keep'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_ucm_history`
+--
+
+TRUNCATE TABLE `cl9q0_ucm_history`;
 --
 -- Contenu de la table `cl9q0_ucm_history`
 --
@@ -3712,6 +4342,88 @@ CREATE TABLE `cl9q0_updates` (
   `extra_query` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Available Updates';
 
+--
+-- Vider la table avant d'insérer `cl9q0_updates`
+--
+
+TRUNCATE TABLE `cl9q0_updates`;
+--
+-- Contenu de la table `cl9q0_updates`
+--
+
+INSERT INTO `cl9q0_updates` (`update_id`, `update_site_id`, `extension_id`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`, `extra_query`) VALUES
+(1, 3, 0, 'Armenian', '', 'pkg_hy-AM', 'package', '', 0, '3.4.4.1', '', 'https://update.joomla.org/language/details3/hy-AM_details.xml', '', ''),
+(2, 3, 0, 'Malay', '', 'pkg_ms-MY', 'package', '', 0, '3.4.1.2', '', 'https://update.joomla.org/language/details3/ms-MY_details.xml', '', ''),
+(3, 3, 0, 'Romanian', '', 'pkg_ro-RO', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/ro-RO_details.xml', '', ''),
+(4, 3, 0, 'Flemish', '', 'pkg_nl-BE', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/nl-BE_details.xml', '', ''),
+(5, 3, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/zh-TW_details.xml', '', ''),
+(6, 3, 0, 'Galician', '', 'pkg_gl-ES', 'package', '', 0, '3.3.1.2', '', 'https://update.joomla.org/language/details3/gl-ES_details.xml', '', ''),
+(7, 3, 0, 'Georgian', '', 'pkg_ka-GE', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/ka-GE_details.xml', '', ''),
+(8, 3, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/el-GR_details.xml', '', ''),
+(9, 3, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/ja-JP_details.xml', '', ''),
+(10, 3, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.1', '', 'https://update.joomla.org/language/details3/he-IL_details.xml', '', ''),
+(11, 3, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/hu-HU_details.xml', '', ''),
+(12, 3, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/af-ZA_details.xml', '', ''),
+(13, 3, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.6.1.1', '', 'https://update.joomla.org/language/details3/ar-AA_details.xml', '', ''),
+(14, 3, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.1', '', 'https://update.joomla.org/language/details3/be-BY_details.xml', '', ''),
+(15, 3, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.4.4.2', '', 'https://update.joomla.org/language/details3/bg-BG_details.xml', '', ''),
+(16, 3, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.6.1.1', '', 'https://update.joomla.org/language/details3/ca-ES_details.xml', '', ''),
+(17, 3, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.4.1.1', '', 'https://update.joomla.org/language/details3/zh-CN_details.xml', '', ''),
+(18, 3, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/hr-HR_details.xml', '', ''),
+(19, 3, 0, 'Czech', '', 'pkg_cs-CZ', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/cs-CZ_details.xml', '', ''),
+(20, 3, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/da-DK_details.xml', '', ''),
+(21, 3, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/nl-NL_details.xml', '', ''),
+(22, 3, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/et-EE_details.xml', '', ''),
+(23, 3, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/it-IT_details.xml', '', ''),
+(24, 3, 0, 'Khmer', '', 'pkg_km-KH', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/km-KH_details.xml', '', ''),
+(25, 3, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/ko-KR_details.xml', '', ''),
+(26, 3, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/lv-LV_details.xml', '', ''),
+(27, 3, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/mk-MK_details.xml', '', ''),
+(28, 3, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.5.1.1', '', 'https://update.joomla.org/language/details3/nb-NO_details.xml', '', ''),
+(29, 3, 0, 'Norwegian Nynorsk', '', 'pkg_nn-NO', 'package', '', 0, '3.4.2.1', '', 'https://update.joomla.org/language/details3/nn-NO_details.xml', '', ''),
+(30, 3, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/fa-IR_details.xml', '', ''),
+(31, 3, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/pl-PL_details.xml', '', ''),
+(32, 3, 0, 'Portuguese', '', 'pkg_pt-PT', 'package', '', 0, '3.5.1.4', '', 'https://update.joomla.org/language/details3/pt-PT_details.xml', '', ''),
+(33, 3, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/ru-RU_details.xml', '', ''),
+(34, 3, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/en-AU_details.xml', '', ''),
+(35, 3, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sk-SK_details.xml', '', ''),
+(36, 3, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/en-US_details.xml', '', ''),
+(37, 3, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sv-SE_details.xml', '', ''),
+(38, 3, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/sy-IQ_details.xml', '', ''),
+(39, 3, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/ta-IN_details.xml', '', ''),
+(40, 3, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/th-TH_details.xml', '', ''),
+(41, 3, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/tr-TR_details.xml', '', ''),
+(42, 3, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/uk-UA_details.xml', '', ''),
+(43, 3, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.3.0.1', '', 'https://update.joomla.org/language/details3/ug-CN_details.xml', '', ''),
+(44, 3, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.1', '', 'https://update.joomla.org/language/details3/sq-AL_details.xml', '', ''),
+(45, 3, 0, 'Basque', '', 'pkg_eu-ES', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/eu-ES_details.xml', '', ''),
+(46, 3, 0, 'Hindi', '', 'pkg_hi-IN', 'package', '', 0, '3.3.6.1', '', 'https://update.joomla.org/language/details3/hi-IN_details.xml', '', ''),
+(47, 3, 0, 'German DE', '', 'pkg_de-DE', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/de-DE_details.xml', '', ''),
+(48, 3, 0, 'Portuguese Brazil', '', 'pkg_pt-BR', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/pt-BR_details.xml', '', ''),
+(49, 3, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sr-YU_details.xml', '', ''),
+(50, 3, 0, 'Spanish', '', 'pkg_es-ES', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/es-ES_details.xml', '', ''),
+(51, 3, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.4.8.1', '', 'https://update.joomla.org/language/details3/bs-BA_details.xml', '', ''),
+(52, 3, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sr-RS_details.xml', '', ''),
+(53, 3, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.1', '', 'https://update.joomla.org/language/details3/vi-VN_details.xml', '', ''),
+(54, 3, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.3.0.2', '', 'https://update.joomla.org/language/details3/id-ID_details.xml', '', ''),
+(55, 3, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/fi-FI_details.xml', '', ''),
+(56, 3, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sw-KE_details.xml', '', ''),
+(57, 3, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.3.1.1', '', 'https://update.joomla.org/language/details3/srp-ME_details.xml', '', ''),
+(58, 3, 0, 'English CA', '', 'pkg_en-CA', 'package', '', 0, '3.6.2.2', '', 'https://update.joomla.org/language/details3/en-CA_details.xml', '', ''),
+(59, 3, 0, 'French CA', '', 'pkg_fr-CA', 'package', '', 0, '3.5.1.2', '', 'https://update.joomla.org/language/details3/fr-CA_details.xml', '', ''),
+(60, 3, 0, 'Welsh', '', 'pkg_cy-GB', 'package', '', 0, '3.3.0.2', '', 'https://update.joomla.org/language/details3/cy-GB_details.xml', '', ''),
+(61, 3, 0, 'Sinhala', '', 'pkg_si-LK', 'package', '', 0, '3.3.1.1', '', 'https://update.joomla.org/language/details3/si-LK_details.xml', '', ''),
+(62, 3, 0, 'Dari Persian', '', 'pkg_prs-AF', 'package', '', 0, '3.4.4.1', '', 'https://update.joomla.org/language/details3/prs-AF_details.xml', '', ''),
+(63, 3, 0, 'Turkmen', '', 'pkg_tk-TM', 'package', '', 0, '3.5.0.2', '', 'https://update.joomla.org/language/details3/tk-TM_details.xml', '', ''),
+(64, 3, 0, 'Irish', '', 'pkg_ga-IE', 'package', '', 0, '3.6.0.1', '', 'https://update.joomla.org/language/details3/ga-IE_details.xml', '', ''),
+(65, 3, 0, 'Dzongkha', '', 'pkg_dz-BT', 'package', '', 0, '3.4.5.1', '', 'https://update.joomla.org/language/details3/dz-BT_details.xml', '', ''),
+(66, 3, 0, 'Slovenian', '', 'pkg_sl-SI', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/sl-SI_details.xml', '', ''),
+(67, 3, 0, 'Spanish CO', '', 'pkg_es-CO', 'package', '', 0, '3.6.1.1', '', 'https://update.joomla.org/language/details3/es-CO_details.xml', '', ''),
+(68, 3, 0, 'German CH', '', 'pkg_de-CH', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/de-CH_details.xml', '', ''),
+(69, 3, 0, 'German AT', '', 'pkg_de-AT', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/de-AT_details.xml', '', ''),
+(70, 3, 0, 'German LI', '', 'pkg_de-LI', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/de-LI_details.xml', '', ''),
+(71, 3, 0, 'German LU', '', 'pkg_de-LU', 'package', '', 0, '3.6.2.1', '', 'https://update.joomla.org/language/details3/de-LU_details.xml', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -3729,14 +4441,19 @@ CREATE TABLE `cl9q0_update_sites` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Update Sites';
 
 --
+-- Vider la table avant d'insérer `cl9q0_update_sites`
+--
+
+TRUNCATE TABLE `cl9q0_update_sites`;
+--
 -- Contenu de la table `cl9q0_update_sites`
 --
 
 INSERT INTO `cl9q0_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`, `extra_query`) VALUES
-(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1474558539, ''),
-(2, 'Joomla! Extension Directory', 'collection', 'https://update.joomla.org/jed/list.xml', 1, 1474558539, ''),
-(3, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 0, ''),
-(4, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 0, '');
+(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 1474795801, ''),
+(2, 'Joomla! Extension Directory', 'collection', 'https://update.joomla.org/jed/list.xml', 1, 1474795801, ''),
+(3, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 1474795801, ''),
+(4, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 1474795801, '');
 
 -- --------------------------------------------------------
 
@@ -3749,6 +4466,11 @@ CREATE TABLE `cl9q0_update_sites_extensions` (
   `extension_id` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Links extensions to update sites';
 
+--
+-- Vider la table avant d'insérer `cl9q0_update_sites_extensions`
+--
+
+TRUNCATE TABLE `cl9q0_update_sites_extensions`;
 --
 -- Contenu de la table `cl9q0_update_sites_extensions`
 --
@@ -3774,6 +4496,11 @@ CREATE TABLE `cl9q0_usergroups` (
   `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_usergroups`
+--
+
+TRUNCATE TABLE `cl9q0_usergroups`;
 --
 -- Contenu de la table `cl9q0_usergroups`
 --
@@ -3815,11 +4542,16 @@ CREATE TABLE `cl9q0_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Vider la table avant d'insérer `cl9q0_users`
+--
+
+TRUNCATE TABLE `cl9q0_users`;
+--
 -- Contenu de la table `cl9q0_users`
 --
 
 INSERT INTO `cl9q0_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-(123, 'Super Utilisateur', 'Webmaster', 'webmaster@bdemiagenancy.fr', '$2y$10$yfuDtZEL828cfly1V4Dw.uc6TcwQgjO7nq2jkW5UHP1XoveA8FuKS', 0, 1, '2016-09-22 15:34:48', '0000-00-00 00:00:00', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
+(123, 'Super Utilisateur', 'Webmaster', 'webmaster@bdemiagenancy.fr', '$2y$10$yfuDtZEL828cfly1V4Dw.uc6TcwQgjO7nq2jkW5UHP1XoveA8FuKS', 0, 1, '2016-09-22 15:34:48', '2016-09-25 09:29:50', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -3837,6 +4569,11 @@ CREATE TABLE `cl9q0_user_keys` (
   `uastring` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_user_keys`
+--
+
+TRUNCATE TABLE `cl9q0_user_keys`;
 -- --------------------------------------------------------
 
 --
@@ -3861,6 +4598,11 @@ CREATE TABLE `cl9q0_user_notes` (
   `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_user_notes`
+--
+
+TRUNCATE TABLE `cl9q0_user_notes`;
 -- --------------------------------------------------------
 
 --
@@ -3874,6 +4616,11 @@ CREATE TABLE `cl9q0_user_profiles` (
   `ordering` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Simple user profile storage table';
 
+--
+-- Vider la table avant d'insérer `cl9q0_user_profiles`
+--
+
+TRUNCATE TABLE `cl9q0_user_profiles`;
 -- --------------------------------------------------------
 
 --
@@ -3885,6 +4632,11 @@ CREATE TABLE `cl9q0_user_usergroup_map` (
   `group_id` int(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Foreign Key to #__usergroups.id'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_user_usergroup_map`
+--
+
+TRUNCATE TABLE `cl9q0_user_usergroup_map`;
 --
 -- Contenu de la table `cl9q0_user_usergroup_map`
 --
@@ -3902,6 +4654,11 @@ CREATE TABLE `cl9q0_utf8_conversion` (
   `converted` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_utf8_conversion`
+--
+
+TRUNCATE TABLE `cl9q0_utf8_conversion`;
 --
 -- Contenu de la table `cl9q0_utf8_conversion`
 --
@@ -3922,6 +4679,11 @@ CREATE TABLE `cl9q0_viewlevels` (
   `rules` varchar(5120) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'JSON encoded access control.'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Vider la table avant d'insérer `cl9q0_viewlevels`
+--
+
+TRUNCATE TABLE `cl9q0_viewlevels`;
 --
 -- Contenu de la table `cl9q0_viewlevels`
 --
@@ -5099,12 +5861,12 @@ ALTER TABLE `bak_cl9q0_content`
 -- AUTO_INCREMENT pour la table `bak_cl9q0_content_types`
 --
 ALTER TABLE `bak_cl9q0_content_types`
-  MODIFY `type_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
+  MODIFY `type_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT pour la table `bak_cl9q0_extensions`
 --
 ALTER TABLE `bak_cl9q0_extensions`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=803;
 --
 -- AUTO_INCREMENT pour la table `bak_cl9q0_finder_filters`
 --
@@ -5234,7 +5996,7 @@ ALTER TABLE `bak_cl9q0_viewlevels`
 -- AUTO_INCREMENT pour la table `cl9q0_assets`
 --
 ALTER TABLE `cl9q0_assets`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=63;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=64;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_banners`
 --
@@ -5264,12 +6026,12 @@ ALTER TABLE `cl9q0_content`
 -- AUTO_INCREMENT pour la table `cl9q0_content_types`
 --
 ALTER TABLE `cl9q0_content_types`
-  MODIFY `type_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
+  MODIFY `type_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_extensions`
 --
 ALTER TABLE `cl9q0_extensions`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10000;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=804;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_finder_filters`
 --
@@ -5319,7 +6081,7 @@ ALTER TABLE `cl9q0_messages`
 -- AUTO_INCREMENT pour la table `cl9q0_modules`
 --
 ALTER TABLE `cl9q0_modules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_newsfeeds`
 --
@@ -5349,7 +6111,7 @@ ALTER TABLE `cl9q0_tags`
 -- AUTO_INCREMENT pour la table `cl9q0_template_styles`
 --
 ALTER TABLE `cl9q0_template_styles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_ucm_content`
 --
@@ -5364,7 +6126,7 @@ ALTER TABLE `cl9q0_ucm_history`
 -- AUTO_INCREMENT pour la table `cl9q0_updates`
 --
 ALTER TABLE `cl9q0_updates`
-  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `update_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 --
 -- AUTO_INCREMENT pour la table `cl9q0_update_sites`
 --

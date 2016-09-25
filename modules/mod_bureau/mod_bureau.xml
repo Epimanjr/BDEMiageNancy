@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Bureau</name>
+    <author>Maxime BLAISE</author>
+    <version>1.0.0</version>
+    <description>Module d'affichage du bureau.</description>
+    <files>
+        <filename>mod_bureau.xml</filename>
+        <filename module="mod_bureau">mod_bureau.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="lang"
+                    type="editor"
+                    label="Test" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
