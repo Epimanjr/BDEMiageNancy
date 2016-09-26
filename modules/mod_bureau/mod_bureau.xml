@@ -7,6 +7,7 @@
     <files>
         <filename>mod_bureau.xml</filename>
         <filename module="mod_bureau">mod_bureau.php</filename>
+        <folder>elements</folder>
         <filename>index.html</filename>
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
@@ -14,11 +15,11 @@
     </files>
     <config>
         <fields name="params">
-            <fieldset name="basic">
+            <fieldset name="basic" addfieldpath="/modules/mod_bureau/elements">
                 <field
-                    name="lang"
-                    type="editor"
-                    label="Test" />
+                    name="bureau"
+                    type="bureau"
+                    label="Test 2" />
             </fieldset>
         </fields>
     </config>
