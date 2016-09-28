@@ -20,6 +20,12 @@
                     name="bureau"
                     type="bureau"
                     label="Test 2" />
+
+                <field 
+                     name="sauvegarde"
+                     type="text"
+                     label=""   
+                />
             </fieldset>
         </fields>
     </config>

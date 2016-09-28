@@ -1,0 +1,7 @@
+label {
+    width: 15%;
+    display: inline-block !important;
+}
+input {
+    width: 300px;
+}
