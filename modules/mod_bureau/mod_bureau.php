@@ -9,4 +9,6 @@ defined('_JEXEC') or die;
 require_once dirname(__FILE__) . '/helper.php';
  
 //$hello = modBureauHelper::getHello($params);
+
+$jsonBureau = $params->get("sauvegarde");
 require JModuleHelper::getLayoutPath('mod_bureau');

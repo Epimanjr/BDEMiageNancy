@@ -42,6 +42,8 @@ function recharger(field, newMember) {
         
         document.getElementById("nom-"+id).value = obj[i].nom;
         document.getElementById("prenom-"+id).value = obj[i].prenom;
+        document.getElementById("fonction-"+id).value = obj[i].fonction;
+        document.getElementById("email-"+id).value = obj[i].email;
     }
 }
 
@@ -56,9 +58,11 @@ function generateJSON() {
         // Récupération des attributs d'un membre
         var nom = document.getElementById("nom-"+childId).value;
         var prenom = document.getElementById("prenom-"+childId).value;
+        var fonction = document.getElementById("fonction-"+childId).value;
+        var email = document.getElementById("email-"+childId).value;
 
         // JSON pour le membre
-        json += '{"id":"'+childId+'", "nom":"'+nom+'", "prenom":"'+prenom+'"}';
+        json += '{"id":"'+childId+'", "nom":"'+nom+'", "prenom":"'+prenom+'", "fonction":"'+fonction+'", "email":"'+email+'"}';
         if(i != (childs.length - 1)) {
             json += ',';
         }
@@ -77,9 +81,13 @@ function remove(id) {
 // Génération du HTML nécessaire pour un membre
 function oneMember(newContentId) {
     var html = '<div id="membre-' + newContentId + '">'
+     + '<fieldset>'
      + '<label>Nom : </label><input id="nom-'+newContentId+'" type="text" />'
      + '<label>Prénom : </label><input id="prenom-'+newContentId+'" type="text" /><br/>'
+     + '<label>Fonction : </label><input id="fonction-'+newContentId+'" type="text" />'
+     + '<label>Adresse email : </label><input id="email-'+newContentId+'" type="email" /><br/>'
      + '<button class="btn btn-danger" onclick="remove('+newContentId+')">Supprimer ce membre</button>'
+     + '</fieldset>'
      + '</div>';
     return html;
 }
