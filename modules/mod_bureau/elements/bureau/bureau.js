@@ -1,21 +1,52 @@
 
 // Ajout d'un nouveau membre
 function add() {
+    // Sauvegarde temporaire
+    var fieldname = "sauvegardetmp";
+    save(fieldname);
 
-    var staff = document.getElementById("staff")
-
-    // Récupération de l'ID
-    var newContentId = 1
-    if(staff.childElementCount != 0) {
-        newContentId = parseInt(staff.lastChild.id.split("-")[1]) + 1
-    }
-
-    staff.innerHTML += oneMember(newContentId);
+    // Recharge à partir de la sauvegarde temporaire
+    recharger(fieldname, true);
 }
 
 // Sauvegarde du contenu de l'équipe au format JSON
-function save() {
+function save(field) {
     // Génération du JSON
+    var json = generateJSON();
+
+    // Placement dans le champ caché
+    document.getElementById("jform_params_"+field).value = json;
+}
+
+function recharger(field, newMember) {
+    var json = document.getElementById("jform_params_"+field).value;
+    var obj = JSON.parse(json).staff;
+
+    var staff = document.getElementById("staff");
+    staff.innerHTML = "";
+    for(i=0;i<obj.length;i++) {
+        staff.innerHTML += oneMember(obj[i].id);
+    }
+
+    if(newMember) {
+        // Récupération de l'ID
+        var newContentId = 1
+        if(staff.childElementCount != 0) {
+            newContentId = parseInt(staff.lastChild.id.split("-")[1]) + 1
+        }
+        
+        staff.innerHTML += oneMember(newContentId);
+    }
+    for(i=0;i<obj.length;i++) {
+        var id = obj[i].id;
+        
+        document.getElementById("nom-"+id).value = obj[i].nom;
+        document.getElementById("prenom-"+id).value = obj[i].prenom;
+    }
+}
+
+// Génénration du JSON à partir des données saisies par l'administrateur
+function generateJSON() {
     var json = '{"staff": [';
 
     var childs = document.getElementById("staff").getElementsByTagName('div');
@@ -27,16 +58,14 @@ function save() {
         var prenom = document.getElementById("prenom-"+childId).value;
 
         // JSON pour le membre
-        json += '{"nom":"'+nom+'", "prenom":"'+prenom+'"}';
+        json += '{"id":"'+childId+'", "nom":"'+nom+'", "prenom":"'+prenom+'"}';
         if(i != (childs.length - 1)) {
             json += ',';
         }
     }
 
     json += ']}'
-
-    // Placement dans le champ caché
-    document.getElementById("jform_params_sauvegarde").value = json;
+    return json;
 }
 
 // Suppression d'un membre de l'équipe

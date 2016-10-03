@@ -23,7 +23,8 @@ class JFormFieldBureau extends JFormField {
 		$document->addStylesheet('../modules/mod_bureau/elements/bureau/bureau.css');
 
 		echo '<button type="button" class="btn btn-success" onclick="add()">Ajouter un membre</button>';
-		echo '<button type="button" class="btn btn-warning" onclick="save()">Sauvegarder</button>';
+		echo '<button type="button" class="btn btn-warning" onclick="save(\'sauvegarde\')">Sauvegarder</button>';
+		echo '<button type="button" class="btn btn-default" onclick="recharger(\'sauvegarde\', false)">Recharger</button>';
 		echo '<div id="staff"></div>';
 	}
 }

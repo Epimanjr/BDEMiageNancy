@@ -26,6 +26,12 @@
                      type="text"
                      label=""   
                 />
+
+                <field
+                    name="sauvegardetmp"
+                    type="text"
+                    label=""
+                />
             </fieldset>
         </fields>
     </config>
