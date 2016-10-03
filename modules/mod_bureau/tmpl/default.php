@@ -2,19 +2,15 @@
 // No direct access
 defined('_JEXEC') or die; 
 
-echo "Bonjour : $jsonBureau";
+$json = json_decode($jsonBureau)->{"staff"};
 
-// Titre + description du bureau
+// Parcours des membres pour affichage
+for($i=0;$i<sizeof($json);$i++) {
+    $member = $json[$i];
 
-
-// Récupération des membres du bureau
-$jsonDecode = json_decode($jsonBureau)->{'staff'};
-for($i = 0;$i<sizeof($jsonDecode);$i++) {
-    $nom = $jsonDecode[0]->{"nom"};
-    $prenom = $jsonDecode[0]->{"prenom"};
-    $fonction = $jsonDecode[0]->{"fonction"};
-    $email = $jsonDecode[0]->{"email"};
-
-    // HTML Pour afficher le membre
-
+    // Récupération des caractéristiques du membre
+    $nom = $member->{"nom"};
+    $prenom = $member->{"prenom"};
+    $fonction = $member->{"fonction"};
+    $email = $member->{"email"};
 }

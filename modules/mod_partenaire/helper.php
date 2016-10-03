@@ -3,7 +3,7 @@
  * Helper class for 'Partenaire' module
  * 
  */
-class ModBureauHelper
+class ModPartenaireHelper
 {
     
 }

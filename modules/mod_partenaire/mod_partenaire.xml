@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Partenaire</name>
+    <author>Maxime BLAISE</author>
+    <version>1.0.0</version>
+    <description>Module d'affichage d'un partenaire.</description>
+    <files>
+        <filename>mod_partenaire.xml</filename>
+        <filename module="mod_partenaire">mod_partenaire.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                
+            </fieldset>
+        </fields>
+    </config>
+</extension>
