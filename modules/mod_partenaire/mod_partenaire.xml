@@ -15,7 +15,11 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                
+                <field name="nom" type="text" label="Nom (ou raison sociale) : " />
+                <field name="photo" type="media" label="Photo : " />
+                <field name="description" type="textarea" label="Description" />
+                <field name="email" type="email" label="Adresse e-mail" />
+                <field name="lien" type="URL" label="Lien externe : " />
             </fieldset>
         </fields>
     </config>
