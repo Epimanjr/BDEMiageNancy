@@ -11,4 +11,5 @@ require_once dirname(__FILE__) . '/helper.php';
 //$hello = modBureauHelper::getHello($params);
 
 $jsonBureau = $params->get("sauvegarde");
+$description = $params->get("description");
 require JModuleHelper::getLayoutPath('mod_bureau');

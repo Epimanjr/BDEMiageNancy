@@ -7,6 +7,8 @@
     <files>
         <filename>mod_partenaire.xml</filename>
         <filename module="mod_partenaire">mod_partenaire.php</filename>
+        <folder>css</folder>
+        <filename>css/partenaire.css</filename>
         <filename>index.html</filename>
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>

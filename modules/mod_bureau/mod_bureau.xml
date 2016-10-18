@@ -8,6 +8,8 @@
         <filename>mod_bureau.xml</filename>
         <filename module="mod_bureau">mod_bureau.php</filename>
         <folder>elements</folder>
+        <folder>css</folder>
+        <filename>css/bureau.css</filename>
         <filename>index.html</filename>
         <filename>helper.php</filename>
         <filename>tmpl/default.php</filename>
@@ -16,21 +18,29 @@
     <config>
         <fields name="params">
             <fieldset name="basic" addfieldpath="/modules/mod_bureau/elements">
+                
+                
                 <field
                     name="bureau"
                     type="bureau"
                     label="Test 2" />
 
                 <field 
-                     name="sauvegarde"
-                     type="text"
-                     label=""   
+                    name="sauvegarde"
+                    type="hidden"
+                    label=""   
                 />
 
                 <field
                     name="sauvegardetmp"
-                    type="text"
+                    type="hidden"
                     label=""
+                />
+                
+                <field 
+                    name="description"
+                    type="textarea"
+                    label="Description du bureau"
                 />
             </fieldset>
         </fields>
